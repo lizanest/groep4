@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <script defer src="../../../scripts/get-distance.js"></script>
+    <script defer src="../../../plugins/point-to-location.js"></script>
+    <script defer src="../../../scripts/get-query-param.js"></script>
+    <script defer src="../../../scripts/is-in-iframe.js"></script>
+    <script defer src="script.js"></script>
+
+  </head>
+  <body>
+
+    <h1>Navigeer naar <span id="location-name"></span></h1>
+    <p>Nog <span id="distance"></span> meter</p>
+
+    <img src="https://thenounproject.com/api/private/icons/2877143/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="volg mij" id="point-to-location"/>
+    <div id="request-permissions">
+      Mogen we je kompas gebruiken om je naar de juiste locatie te gidsen?
+      <button id="request-permissions-button">Geef goedkeuring</button>
+    </div>
+
+  </body>
+</html>

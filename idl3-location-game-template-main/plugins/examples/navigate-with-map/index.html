@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <script defer src="../../../scripts/secrets.js"></script>
+    <script defer src="../../../plugins/maps.js"></script>
+    <script defer src="../../../scripts/get-distance.js"></script>
+    <script defer src="../../../scripts/get-query-param.js"></script>
+    <script defer src="../../../scripts/is-in-iframe.js"></script>
+    <script defer src="script.js"></script>
+
+  </head>
+  <body>
+
+    <h1>Navigeer naar <span id="location-name"></span></h1>
+    <p>Nog <span id="distance"></span> meter</p>
+
+    <div style="width:500px;height:500px;" id="mapper"></div>
+
+  </body>
+</html>

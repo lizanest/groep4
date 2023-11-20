@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+#iframe, .simulator {
+  flex: 1;
+}
+
+.simulator {
+  background-color: #494949;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.simulator-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.simulator-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#map {
+  width: 100%;
+  flex: 1;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="styles/reset.css" type="text/css" rel="stylesheet">
+    <link href="styles/test.css" type="text/css" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <script defer src="scripts/secrets.js"></script>
+    <script defer src="scripts/get-next-page.js"></script>
+    <script defer src="scripts/test.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <iframe id="iframe"></iframe>
+      <div class="simulator">
+        <div class="simulator-info">
+          <h1 class="simulator-title">Location Simulator</h1>
+          <p class="simulator-text">Current postion: <span id="coordinates"></span></p>
+          <p class="simulator-text">Drag pin to change your simulated position.</p>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
